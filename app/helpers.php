@@ -215,7 +215,7 @@ function app_logo_image($attributes = [])
 {
     return Html::image(
         app_logo_path(),
-        'Logo '.Option::get('agency_name', 'Laravel'),
+        'Logo '.Option::get('agency_name', 'Project Management System PT. Cipta Rejeki Selaras'),
         $attributes
     );
 }
@@ -227,11 +227,11 @@ function app_logo_image($attributes = [])
  */
 function app_logo_path()
 {
-    $defaultLogoImagePath = 'default-logo.png';
+    $defaultLogoImagePath = 'logocrs.png';
     $optionLogoImagePath = Option::get('agency_logo_path');
 
     if (is_file(storage_path('app/public/assets/imgs/'.$optionLogoImagePath))) {
-        return asset('storage/assets/imgs/'.$optionLogoImagePath);
+        return asset('assets/imgs/'.$optionLogoImagePath);
     }
 
     return asset('assets/imgs/'.$defaultLogoImagePath);

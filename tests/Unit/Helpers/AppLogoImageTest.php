@@ -30,8 +30,8 @@ class AppLogoImageTest extends TestCase
     public function app_logo_image_function_returns_default_logo_image_element_if_no_agency_logo_path_setting()
     {
         $logoString = '<img';
-        $logoString .= ' src="'.asset('assets/imgs/default-logo.png').'"';
-        $logoString .= ' alt="Logo Laravel">';
+        $logoString .= ' src="'.asset('assets/imgs/logocrs.png').'"';
+        $logoString .= ' alt="Logo PT.CRS">';
 
         $this->assertEquals($logoString, app_logo_image());
     }

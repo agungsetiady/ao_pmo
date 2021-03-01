@@ -8,10 +8,10 @@
 </nav>
 
 <div class="navbar-default sidebar hidden-print" role="navigation">
-    <div class="sidebar-nav navbar-collapse">
+    <div class="sidebar-nav navbar-collapse" style="background: #800020;color:#fff;">
         <a class="navbar-brand text-center" title="Home | {{ Option::get('agency_tagline', 'Laravel app description') }}" href="{{ route('home') }}">
             {{ app_logo_image(['class' => 'sidebar-logo']) }}
-            <div class="small" style="margin-top:10px">{{ config('app.name') }}</div>
+            <div class="small text-info" style="margin-top:10px;color:#fff;">{{ config('app.name') }}</div>
         </a>
         @include('layouts.partials.lang-switcher')
         <ul class="nav" id="side-menu">

@@ -5,20 +5,21 @@
     <meta name="x-csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>@yield('title', Option::get('app_name', 'Aplikasi Laravel'))</title>
+    <meta name="description" content="Project Management System PT. Cipta Rejeki Selaras">
+    <link rel="shortcut icon" href="{{ url('assets/imgs/logocrs.png') }}">
+    <meta name="author" content="Agung Setiady">
+    <title>@yield('title', Option::get('app_name', 'Project Management System PT. Cipta Rejeki Selaras'))</title>
 
     @yield('ext_css')
     {!! Html::style('assets/css/app.css') !!}
 </head>
-<body>
-    <div id="wrapper">
+<body style="background-color: khaki;">
+    <div id="wrapper" style="background-color: khaki;">
 
         @include('layouts.partials.sidebar')
 
-        <div id="page-wrapper">
-            <div class="container-fluid">
+        <div id="page-wrapper" style="background-color: khaki;">
+            <div class="container-fluid" style="background-color: khaki;">
                 @yield('content')
             </div>
             <!-- /.container-fluid -->
